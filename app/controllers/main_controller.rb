@@ -1,7 +1,7 @@
 class MainController < ApplicationController
 
   def home 
-    @note = Note.first
+    @note_list = Note.all
   end
 
   def note_form

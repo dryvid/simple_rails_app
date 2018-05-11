@@ -1,7 +1,9 @@
 <h1>Notes</h1>
 
 <ul>
-  <li><%= @note.content %></li>
+  <% @note_list.each do |note| %>
+    <li><%= note.content %></li>
+  <% end %>
 </ul>
 
 <p>
